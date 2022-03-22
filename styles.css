@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #181719;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 200;
+  line-height: 16px;
+  margin: 19px 0 0 12px;
+  color: #ffffff;
+  width: 103px;
+  height: 31px;
+  border: 1px solid #ffffff;
+}
+
+.header__menu {
+  margin-top: 25.5px;
+  margin-right: 12.75px;
+}
+
+.header__menu--navigation {
+  display: none;
+}
+
+.header .material-icons {
+  width: 28.5px;
+  height: 19px;
+  color: #ffffff;
+}
+
+.main {
+  color: #ffffff;
+}
+
+.main__header {
+  margin-left: 12px;
+}
+
+.main__header h1 {
+  font-family: 'Lora';
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+
+.main__header p {
+  width: 250px;
+  height: 85px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.main__button {
+  margin-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 17px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 37px;
+}
+
+.main__button p {
+  margin-top: 25px;
+}
+
+.main__button span {
+  margin-top: 25px;
+}
+
+.main__design {
+  background-image: url("./images/photo1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 45vh;
+  margin: 0 auto;
+}
+
+.main__section {
+  background-color: #181719;
+  width: 300px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  margin-top: -60px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main__section--information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 8px;
+  margin-bottom: 21.9px;
+}
+
+.main__section--img {
+  width: 62.2px;
+  height: 52.68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__section--img img {
+  width: 36.59px;
+  border-radius: 50%;
+  border: none;
+}
+
+.main__section--data {
+  font-family: 'Montserrat';
+}
+
+.main__section--data span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.main__section--data p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.main__section--h3 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  width: 210px;
+  height: 45px;
+  margin-left: 19px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-align: center;
+  margin-top: 61px;
+  margin-bottom: 24px;
+}
+
+.footer span {
+  border-bottom: 1px solid #A9A9A9;
+}
+
+@media (min-width: 1200px) {
+  .header__button {
+    cursor: pointer;
+    margin: 42px 0 0 77px;
+    -webkit-transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .header__button:hover {
+    color: chocolate;
+    border: 1px dashed chocolate;
+    -webkit-transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .header__menu {
+    margin: 46px 76px 0 0;
+    width: 424px;
+  }
+  .header__menu--navigation {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    width: 424px;
+    color: #ffffff;
+  }
+  .header__menu--navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .header__menu--navigation ul li {
+    cursor: pointer;
+    -webkit-transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .header__menu--navigation ul li:hover {
+    text-decoration: underline;
+    color: chocolate;
+    -webkit-transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .header .material-icons {
+    display: none;
+  }
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 1286px;
+    margin: 0 auto;
+    margin-top: 245px;
+    margin-bottom: 169px;
+  }
+  .main__design {
+    width: 735px;
+    height: 555px;
+  }
+  .main__section {
+    width: 410px;
+    height: 189px;
+    margin-left: 300px;
+  }
+  .main__section--data span {
+    font-size: 14px;
+  }
+  .main__section--h3 {
+    width: 287px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
