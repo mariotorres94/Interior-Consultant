@@ -41,18 +41,67 @@
 }
 
 .header__menu {
+  position: relative;
+  top: 0;
+  left: 0;
   margin-top: 25.5px;
   margin-right: 12.75px;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .header__menu--navigation {
   display: none;
 }
 
+.header__menu--navigation ul {
+  position: absolute;
+  top: -26px;
+  left: -358px;
+  width: 400px;
+  height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.header__menu--navigation ul li {
+  list-style: none;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.header__menu--navigation ul li li:hover {
+  text-decoration: underline;
+  color: red;
+}
+
 .header .material-icons {
   width: 28.5px;
   height: 19px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.header #close {
+  position: relative;
+  z-index: 2;
+  display: none;
 }
 
 .main {
@@ -235,12 +284,19 @@
     font-size: 18px;
     line-height: 22px;
     width: 424px;
+    height: 21px;
     color: #ffffff;
   }
   .header__menu--navigation ul {
+    top: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -248,11 +304,14 @@
         -ms-flex-align: center;
             align-items: center;
     list-style: none;
+    width: 400px;
+    height: 21px;
   }
   .header__menu--navigation ul li {
     cursor: pointer;
     -webkit-transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 0;
   }
   .header__menu--navigation ul li:hover {
     text-decoration: underline;
